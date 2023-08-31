@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'btn-bg': '#0D6EFD',
+                'header-color':'#403F3F',
+                'banner-bg':'rgba(13, 110, 253, 0.05)',
+                'pera-color':'#706F6F',
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header class="h-screen w-full bg-banner-bg pt-12 px-7">
+        <div class="flex items-center justify-between">
+            <h2 class="font-bold text-2xl">Hot Gadgets</h2>
+            <button class="btn bg-btn-bg text-white rounded-lg">Sign Up</button>
+        </div>
+        <div class="text-center">
+            <h1 class="text-6xl text-header-color font-bold mt-12">Apple Iphone 13 Pro Max</h1>
+            <p class="text-pera-color font-normal text-lg w-[738px] mt-6 mb-8 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+            <button class="btn bg-btn-bg text-white rounded-lg">Buy Now</button>
+        </div>
+    </header>
+</body>
+</html>
