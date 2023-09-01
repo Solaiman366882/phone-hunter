@@ -49,9 +49,55 @@
         <section>
             <div class="text-center relative w-[700px] mx-auto">
                 <h2 class="text-4xl font-semibold mb-7 text-header-color ">Search your phone</h2>
-                <div class="relative"><input type="search" class="min-w-[700px] bg-slate-300 h-14 rounded-lg pl-10" placeholder="Search your phone" name="" id=""><button class="btn hover:bg-sky-700 bg-btn-bg text-white rounded-lg absolute top-0 right-0 h-full">Buy Now</button></div>
+                <div class="relative"><input type="search" class="min-w-[700px] bg-slate-300 h-14 rounded-lg pl-10" placeholder="Search your phone" name="" id="search-field"><button class="btn hover:bg-sky-700 bg-btn-bg text-white rounded-lg absolute top-0 right-0 h-full" onclick="handleSearch()">Search</button></div>
+            </div>
+            <div id="loading-container" class="mt-40 text-center hidden">
+                <span class="loading loading-spinner text-sky-500 loading-lg"></span>
             </div>
         </section>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-24 gap-5 min-h-[300px]" id="phone-container">
+
+            <!-- <div class="card bg-base-100 shadow-xl border border-sky-200 p-6">
+                <figure class="px-7 pt-7  bg-banner-bg">
+                  <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center pb-0">
+                  <h2 class="card-title">Iphone 13 Pro Max</h2>
+                  <p>There are many variations of passages of available, but the majority have suffered</p>
+                  <h2 class="card-title">$999</h2>
+                  <div class="card-actions">
+                    <button class="btn hover:bg-sky-700 bg-btn-bg text-white">Show Details</button>
+                  </div>
+                </div>
+              </div> -->
+        </section>
+        <div id="show-all-container" class="p-8 text-center hidden">
+            <button class="btn hover:bg-sky-700 bg-btn-bg text-white" onclick="handleShowAll()" id="show-all-btn">Show Details</button>
+        </div>
+
+        <div>
+                    <!-- Open the modal using ID.showModal() method -->
+          <button class="btn" onclick="show_details_modal.showModal()">open modal</button>
+          <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+            <form method="dialog" class="modal-box">
+              <div id="show-details-container">
+                <div class="text-center"><img src="" alt=""></div>
+                <h3 class="font-bold text-lg">Hello!</h3>
+                <p class="py-4">Press ESC key or click the button below to close</p>
+              </div>
+              
+              <div class="modal-action">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+              </div>
+            </form>
+          </dialog>
+        </div>
     </main>
+    <footer></footer>
+
+
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
